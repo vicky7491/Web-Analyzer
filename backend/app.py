@@ -14,7 +14,7 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 CORS(app, resources={r"/analyze": {"origins": "http://localhost:3000"}})  # Specific CORS
 
-GOOGLE_API_KEY = "AIzaSyBhL-W9S4SmSyBN4E6oaLG2wFB2vA4anMM"
+GOOGLE_API_KEY = "GOOGLE_API_KEY"
 
 def analyze_page_speed(url):
     """Fetch performance & SEO data from Google PageSpeed API"""
